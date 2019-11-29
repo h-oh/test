@@ -130,12 +130,13 @@ ComicApp.ComicBacklogHelper = (function(jQuery, GLOBAL, dateFormat) {
 ));
 
 //init
-jQuery(document).ready(function() {
-    ComicApp.ComicBacklogHelper.init();
-});
+if (window.location.hostname = "ozvision.backlog.jp") {
+	jQuery(document).ready(function() {
+		ComicApp.ComicBacklogHelper.init();
+	});
 
-jQuery(window).scroll(ComicApp.ComicBacklogHelper.scrollEventListner);
-
+	jQuery(window).scroll(ComicApp.ComicBacklogHelper.scrollEventListner);
+}
 
 
 
