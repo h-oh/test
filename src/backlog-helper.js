@@ -130,7 +130,7 @@ ComicApp.ComicBacklogHelper = (function(jQuery, GLOBAL, dateFormat) {
 ));
 
 //init
-if (window.location.hostname = "ozvision.backlog.jp") {
+if (window.location.hostname === "ozvision.backlog.jp") {
 	jQuery(document).ready(function() {
 		ComicApp.ComicBacklogHelper.init();
 	});
